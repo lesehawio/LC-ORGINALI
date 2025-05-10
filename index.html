@@ -86,6 +86,9 @@
             cursor: pointer;
             color: #ff3333;
         }
+        h4{
+            color:rgb(255, 255, 0);
+        }
     </style>
 </head>
 <body>
@@ -96,6 +99,7 @@
         <p>Focus, Learn, Productivity</p>
     </div>
     <div class="actions">
+        <h4>☢ Welcome to our laboratory ☢</h4>
         <button id="createCapsuleBtn" aria-label="Create a New Capsule">Create a New Capsule</button>
     </div>
     <div class="footer">
@@ -131,6 +135,11 @@
                 backgroundAudio.pause();
                 toggleSoundBtn.innerHTML = '🔈'; // Sound off
             }
+        };
+
+        // اضافه کردن رویداد کلیک به دکمه
+        document.getElementById('createCapsuleBtn').onclick = function() {
+            window.location.href = 'https://lesehawio.github.io/LC/';
         };
     </script>
 </body>
